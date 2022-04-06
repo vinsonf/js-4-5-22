@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/main.js"></script>
 </head>
 <body>
 
@@ -15,6 +16,9 @@
             color: blue;
         }
     </style>
+
+    <h1>This used to be at the top</h1>
+ 
     <h1 style="color: red">Day 1</h1>
 
     <h2>3 ways to use JavaScript in HTML</h2>
@@ -28,16 +32,40 @@
                     <span class="tag">&lt;/h3&gt;</span>
                 </span>
             </code>
+               
+
+            <code>
+                <span class="tag">&lt;button onclick="alert()"&gt;</span>
+                <br>   
+                Click Me
+                <span class="content">
+                   
+                    <span class="tag">&lt;/button&gt;</span>
+                </span>
+            </code>
+            
         </li>
         <li>
             <h3>Internal</h3>
             <code>
                 <span class="tag">&lt;style&gt;</span>
+                <br>
+                h3 {
+                    color: red;
+                }
                 <span class="content">
-                    h3 {
-                        color: red;
-                    }
+                   
                     <span class="tag">&lt;/style&gt;</span>
+                </span>
+            </code>
+
+            <code>
+                <span class="tag">&lt;script&gt;</span>
+                <br>
+                alert('hello')
+                <span class="content">
+                
+                    <span class="tag">&lt;/script&gt;</span>
                 </span>
             </code>
         </li>
@@ -45,6 +73,13 @@
             <h3>External</h3>
             <code>
                 <span class="tag">&lt;link href="./css/filename"&gt;</span>
+                <span class="content">
+                    
+                </span>
+            </code>
+
+            <code>
+                <span class="tag">&lt;script src="./js/filename"&gt;</span>
                 <span class="content">
                     
                 </span>
