@@ -12,7 +12,7 @@ document.body.appendChild(h2); // place element on the body
 // Read
 h1 = document.querySelector('h1'); // select element
 h1.innerHTML = 'Now it is at the bottom'; // write text in element
-h1second = document.querySelectorAll('h1')[1];
+h1second = document.querySelectorAll('h1')[1]; // seleect multiple elements
 document.body.appendChild(h1); // place element on the body
 
 // Update
@@ -35,4 +35,14 @@ console.log(h1second); // show things in console (right click -> inspect)
 // case sensitive
 
 H2 = document.createElement('H2'); // Create a new element
-console.log(h2, H2)
+console.log(h2, H2);
+
+
+// comments
+
+// single line //
+
+/*
+multi line
+comments
+*/
