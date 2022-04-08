@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.tree {
+    position: absolute;
+    top: 250px;
+    animation: tree-move 1.5s infinite linear;
+}
+
+.scene {
+    box-sizing: border-box;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+@keyframes tree-move {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+
+.dinosaur {
+    position: absolute;
+    top: 250px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    
+}
+
+.jumping {
+    animation: jump 1s 1;
+}
+
+@keyframes jump {
+    0% {
+        top: 250px;
+    }
+    50% {
+        top: 150px;
+    }
+    100% {
+        top: 250px;
+    }
+}
