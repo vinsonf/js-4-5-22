@@ -5,10 +5,6 @@ h2.innerHTML = 'Create'; // write text in element
 document.body.appendChild(h2); // place element on the body
 
 
-
-
-
-
 // Read
 h1 = document.querySelector('h1'); // select element
 h1.innerHTML = 'Now it is at the bottom'; // write text in element
