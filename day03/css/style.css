@@ -1,0 +1,10 @@
+p {
+    background-color: aqua;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.visible {
+    height: 400px;
+}

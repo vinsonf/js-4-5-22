@@ -1,9 +1,7 @@
 // dinosaur game
-
 const scene = document.createElement('div');
 scene.classList.add('scene');
 document.body.append(scene);
-
 
 scene.style.height = 300 + 'px';
 scene.style.border = '1px solid black';
@@ -16,14 +14,11 @@ tree.style.height = 50 + 'px';
 tree.style.width = 50 + 'px';
 tree.style.backgroundColor = 'green';
 
-
 scene.append(tree);
-
 
 const dinosaur = document.createElement('div');
 dinosaur.classList.add('dinosaur');
 scene.append(dinosaur);
-
 
 document.addEventListener('click', () => {
     dinosaur.classList.add('jumping');
