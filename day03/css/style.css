@@ -8,3 +8,11 @@ p {
 .visible {
     height: 400px;
 }
+
+#my-favorite {
+    background-color: red;
+}
+
+#my-favorite span {
+    color: white;
+}
