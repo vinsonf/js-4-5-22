@@ -1,6 +1,7 @@
 // function is to a code block as a class is to an object
 let score = 0;
-
+let selectedPlayer = null;
+let i = 0;
 class Player {
     image = 'http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/e871a8dfbd7f16e.png';
     health = 100;
@@ -44,7 +45,7 @@ class Player {
         this.playerElement.style.position = 'absolute';
         this.playerElement.style.left = this.x + 'px';
         this.playerElement.style.top = this.y + 'px';
-        this.playerElement.style.transform = 'rotate(' + this.rotation + 'deg)' + 'scaleX(' + this.direction+')';
+        this.playerElement.style.transform = 'rotate(' + this.rotation + 'deg)' + 'scaleX(' + this.direction +')';
     }
 
     move(event) {
@@ -102,23 +103,15 @@ class Enemy extends Player {
 
 const players = [];
 
+
 new Player(100, 100);
-new Player(200, 200, 'w', 's', 'a', 'd');
-new Player(300, 300, 'j', 'k', 'h', 'l');
+new Player(200, 200, );
+new Player(300, 300);
 new Enemy(400, 400);
 
-players.push({
-    x: 100,
-    y: 100,
-    image: 'http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/e871a8dfbd7f16e.png',
-    health: 100,
-    height: '200px',
-    width: '160px',
-    rotation: 0,
-    direction:1,
-    move: function(event){},
-    view: function(){}
-})
+
+
+selectedPlayer = players[0];
 
 
 
@@ -128,8 +121,23 @@ players.push({
 document.addEventListener('keydown', (event) => {
     
     players.forEach(player => {
-        player.move(event);
+        if (selectedPlayer === player) {
+             player.move(event);
+        }
+       
     });
+
+    console.log(event.key)
+    if (event.key === 'p') {
+        i++;
+        if (i === players.length) {
+            i = 0;
+        }
+        selectedPlayer = players[i];
+        document.querySelector('.active')?.classList.remove('active');
+        selectedPlayer.playerElement.classList.add('active')
+
+    }
     
 
 });

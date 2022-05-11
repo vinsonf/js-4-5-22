@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="theme1">
+
+    <style>
+        :root{
+            --bg: green;
+            --text: white;
+        }
+        img {
+            transform: rotate(90deg) scale(-1, -1);
+        }
+
+
+        li {
+            font-size: 40px;
+        }
+
+        li {
+            list-style: none;
+            
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        button {
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+       
+
+     
+    </style>
+
+    <button>Theme 1</button> <button>Theme 2</button>
+    <button>Theme 3</button>
+
+    <script>
+        const buttons = document.querySelectorAll('button');
+        buttons[0].addEventListener('click', () => {
+            document.querySelector(':root').style.setProperty('--bg', 'green');
+            document.querySelector(':root').style.setProperty('--text', 'purple');
+        });
+        buttons[1].addEventListener('click', () => {
+            document.querySelector(':root').style.setProperty('--bg', 'red');
+            document.querySelector(':root').style.setProperty('--text', 'yellow');
+        });
+        buttons[2].addEventListener('click', () => {
+            document.querySelector(':root').style.setProperty('--bg', 'blue');
+            document.querySelector(':root').style.setProperty('--text', 'white');
+        });
+    </script>
+<!-- 
+    <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/e871a8dfbd7f16e.png" alt=""> -->
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+    </ul>
+</body>
+</html>

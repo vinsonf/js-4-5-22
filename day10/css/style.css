@@ -1,0 +1,23 @@
+.title {
+    font-size: 5rem;
+  
+    color: #fff;
+    text-shadow: 0 0 10px black;
+}
+
+.green {
+    color: #2eda2e;
+}
+
+.center {
+    text-align: center;
+}
+
+.basic-padding {
+    padding: 4rem;
+}
+
+.done {
+    color: #2eda2e;
+    text-decoration: line-through;
+}
